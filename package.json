@@ -1,0 +1,7 @@
+{
+  "name": "serverless-redirect",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Judd Misael R. Baguio <juddmisaelbaguio@gmail.com>",
+  "license": "MIT"
+}
