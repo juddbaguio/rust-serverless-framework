@@ -2,7 +2,7 @@
 build:
 	cargo lambda build --release -o Zip
 
-deploy:
+deploy: build
 	sls deploy --aws-profile ${AWS_PROFILE}
 
 remove:

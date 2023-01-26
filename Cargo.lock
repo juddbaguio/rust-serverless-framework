@@ -429,7 +429,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "serverless-redirect"
+name = "serverless"
 version = "0.1.0"
 dependencies = [
  "axum",

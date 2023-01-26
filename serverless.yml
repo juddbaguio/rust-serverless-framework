@@ -6,7 +6,9 @@ provider:
   region: ap-southeast-1
   runtime: provided.al2
   stackName: juddbaguio-github
-    
+
+useDotenv: true
+
 package: 
   individually: true
 
@@ -15,10 +17,18 @@ functions:
     layers:
       - arn:aws:lambda:ap-southeast-1:753240598075:layer:LambdaAdapterLayerX86:11
     package: 
-      artifact: target/lambda/serverless-redirect/bootstrap.zip
+      artifact: target/lambda/serverless/bootstrap.zip
     handler: bootstrap
     events:
       - http:
           method: GET
           path: /
+          cors: true
+      - http:
+          method: GET
+          path: /twitter
+          cors: true
+      - http:
+          method: GET
+          path: /github
           cors: true
